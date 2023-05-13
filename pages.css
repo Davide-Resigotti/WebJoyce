@@ -1,0 +1,318 @@
+@import 'https://fonts.googleapis.com/css?family=Karla';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(15deg, hsl(0, 0%, 99%), rgb(0, 0, 0));
+  font-family: karla;
+  color: #666;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+  
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
+}
+
+
+.foto2 {
+  height: 40%;
+  width: 45%;
+}
+
+.foto3{
+  height: 50%;
+  width: 50%;
+}
+
+.foto4{
+  height: 50%;
+  width: 50%;
+}
+
+
+
+header {
+  position: relative;
+  transform-style: preserve3d;
+  perspective: 3000px;
+  z-index: 1;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  font-family: 'sans-serif';
+}
+.menu a {
+  padding: 20px 20px;
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.menu__item {
+  position: relative;
+  z-index: 1;
+}
+.menu__item:hover > .sub-menu-shadow {
+  display: block;
+}
+.menu .sub-menu-shadow {
+  position: absolute;
+  display: none;
+}
+
+.dropdown-holder {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+}
+.dropdown__bg, .dropdown__arrow {
+  position: absolute;
+}
+.dropdown__arrow {
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white;
+  top: -20px;
+  opacity: 0;
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+.dropdown__bg {
+  width: 450px;
+  height: 400px;
+  background-color: white;
+  opacity: 0;
+  transition: 0.25s ease;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.dropdown__bg-bottom {
+  background-color: #fafafa;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 300px;
+  height: 700px;
+  transition: 0.3s ease;
+}
+.dropdown__wrap {
+  overflow: hidden;
+  position: absolute;
+  transition: 0.25s ease;
+  z-index: 1;
+}
+.dropdown__wrap .top-section, .dropdown__wrap .bottom-section {
+  padding: 20px;
+}
+
+
+
+.dropdown-menu__content {
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  transition: 0.25s ease;
+  min-width: 50px;
+  z-index: 1;
+}
+.dropdown-menu__content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.dropdown-menu__content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.dropdown-menu__content
+ h3 {
+  color: blue;
+
+}
+
+.dropdown-menu__content a:hover {
+  color: #333;
+}
+.dropdown-menu.active .dropdown-menu__content {
+  opacity: 1;
+}
+
+
+
+#opere .dropdown-menu__content,
+#vita .dropdown-menu__content,
+#curiosità .dropdown-menu__content
+ {
+  width: 640px;
+}
+
+
+
+.col {
+  display: flex;
+}
+.col > ul, .col > div {
+  flex: 1 0 150px;
+}
+
+
+
+
+
+
+.menu-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #2196F3;
+}
+
+
+/* TITOLO*/
+
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+
+
+
+
+@keyframes fadeInRight {
+	0% { left: 100% }
+	100% { left: 50% }
+}
+
+@keyframes fadeInBottom {
+	0% { top: 100% }
+	100% { top: 50% }
+}
+
+
+
+
+.title {
+  position : relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'sans-serif';
+	font-size: 5em;
+	line-height: 1em;
+	width: 100%;
+	height: 100%;
+	color: #000000;
+	animation-delay: 3s;
+	animation: colorFlip 3.5s infinite;
+	overflow: hidden;
+  
+
+  
+}
+
+	.from-right,
+	.from-bottom { 
+		position: absolute;
+		width: 10em;
+		height: 2em;
+		margin-left: -5em;
+		left: 50%;
+		top: 50%;
+		text-align: center;
+	}
+	.from-right {
+		margin-top: -1em;
+		animation: fadeInRight 2s 1;
+	}
+	.from-bottom {
+		animation: fadeInBottom 2s 1;
+	}
+
+  .jamesjoyce{
+    position: absolute;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+  }
+
+.fotojoyce{
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+} 
+
+
+
+
+
+
+.container2,
+.container3,
+.container4{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
+.incontainer2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  width: 80%;
+  color: black;
+}
+
+.incontainer3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  width: 80%;
+  color: black;
+}
+
+.incontainer4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  width: 80%;
+  color: black;
+}
+
+
+
+
+
+
